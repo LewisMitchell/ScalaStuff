@@ -1,0 +1,8 @@
+@(optMode: Option[String] = None)
+
+@main("Welcome to Play") {
+  <h1>Welcome to Play!</h1>
+  @if(optMode.isDefined) {
+    <h2>This application is running in @{optMode.get} mode</h2>
+  }
+}
